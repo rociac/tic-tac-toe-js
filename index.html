@@ -15,23 +15,23 @@
   <form id="form">
     <div>
       <label for="player1">Player 1: </label>
-      <input type="text" id="player1">
+      <input type="text" id="player1" required>
 
       <label for="weapon">Choose your weapon: </label>
-      <label for="x"><input type="radio" name="weapon" id="x" value="x"> X</label>
+      <label for="x"><input type="radio" name="weapon" id="x" value="x" checked> X</label>
       <label for="o"><input type="radio" name="weapon" id="o"> O</label>
     </div>
 
 
     <label for="player2">Player 2: </label>
-    <input type="text" id="player2">
+    <input type="text" id="player2" required>
 
     <button type="button" id="start">Start Game!</button>
   </form>
 
   <table class="gameBoard">
   </table>
-
+  <div id="info-winner"></div>
   <script src="js/main.js"></script>
 </body>
 

@@ -44,3 +44,11 @@ h1 {
   border-right: 2px solid black;
   border-left: 2px solid black;
 }
+
+#info-winner{
+  text-align: center;
+  font-size: 25px;
+  padding: 20px;
+  font-weight: bold;
+  color: brown;
+}
