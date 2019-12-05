@@ -52,3 +52,9 @@ h1 {
   font-weight: bold;
   color: brown;
 }
+
+#reset {
+  display: none;
+}
+
+
