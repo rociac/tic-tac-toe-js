@@ -6,10 +6,33 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Document</title>
+  <link rel="stylesheet" href="css/master.css">
 </head>
 
 <body>
+  <h1>Tic Tac Toe</h1>
 
+  <form id="form">
+    <div>
+      <label for="player1">Player 1: </label>
+      <input type="text" id="player1">
+
+      <label for="weapon">Choose your weapon: </label>
+      <label for="x"><input type="radio" name="weapon" id="x" value="x"> X</label>
+      <label for="o"><input type="radio" name="weapon" id="o"> O</label>
+    </div>
+
+
+    <label for="player2">Player 2: </label>
+    <input type="text" id="player2">
+
+    <button type="button" id="start">Start Game!</button>
+  </form>
+
+  <table class="gameBoard">
+  </table>
+
+  <script src="js/main.js"></script>
 </body>
 
 </html>
