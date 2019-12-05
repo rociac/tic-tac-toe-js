@@ -1,4 +1,6 @@
 module.exports = {
+  lint: "eslint js/main.js --fix",
+
   env: {
     browser: true,
     es6: true,
