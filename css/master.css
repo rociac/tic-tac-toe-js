@@ -81,6 +81,41 @@ img{
   box-shadow: 0px 0px 10px #aeff00;
 }
 
+.form-div {
+  padding: 5px;
+  color: white;
+  font-weight: bold;
+  font-size: 25px;
+  text-shadow: 1px 1px 1px black;
+}
+
+.form-div input {
+  border-radius: 7px;
+}
+
+#form button {
+  margin-top: 20px;
+  margin-bottom: 0;
+  padding: 10px;
+  cursor: pointer;
+  color: white;
+  background: black;
+  border: none;
+  border-right: 1px solid white;
+  border-top: 1px solid white;
+  border-radius: 7px;
+}
+
+#form button:hover {
+  border: none;
+  border-left: 1px solid white;
+  border-bottom: 1px solid white;
+}
+
+#form button:active {
+  background: grey;
+}
+
 #td1 {
   border-bottom: 5px solid #5bad21;
 }
@@ -136,6 +171,17 @@ img{
   100%{
     -webkit-transform: scale(1);
   }
+}
+
+#form {
+  margin: 0 auto;
+  width: 30%;
+  background: #1d5e21;
+  box-shadow: 0 0 5px #00ff0e;
+  padding: 40px 25px;
+  border-radius: 10px;
+  margin-top: 40px;
+  text-align: center;
 }
 
 #reset {

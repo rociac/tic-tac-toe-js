@@ -72,11 +72,13 @@ function addListeners() {
   for (let i = 1; i <= 9; i += 1) {
     document.getElementById(`td${i}`).addEventListener('click', () => {
       const box = document.getElementById(`td${i}`);
+      let winner = false;
       if (board[i - 1] === '') {
         board[i - 1] = current.getWeapon();
         box.innerHTML = current.getWeapon();
         if (win(current.getWeapon())) {
           gameOver(current);
+          winner = true;
         }
         let count = 0;
         board.forEach((e) => {
@@ -84,7 +86,7 @@ function addListeners() {
             count += 1;
           }
         });
-        if (count === 9) {
+        if (count === 9 && !winner) {
           gameOver('tie');
         }
         if (current === player1) {
@@ -142,7 +144,6 @@ function resetGame() {
   tic.style.pointerEvents = 'all';
   change.style.display = 'none';
   change.innerHTML = '';
-  current = player1;
 }
 
 

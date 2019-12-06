@@ -15,19 +15,19 @@
   <div id="scoreBoard"></div>
 
   <form id="form">
-    <div>
+    <div class="form-div">
       <label for="player1">Player 1: </label>
       <input type="text" id="player1" required>
-
+    </div>
+    <div class="form-div">
       <label for="weapon">Choose your weapon: </label>
       <label for="x"><input type="radio" name="weapon" id="x" value="x" checked> X</label>
       <label for="o"><input type="radio" name="weapon" id="o"> O</label>
     </div>
-
-
-    <label for="player2">Player 2: </label>
-    <input type="text" id="player2" required>
-
+    <div class="form-div">
+      <label for="player2">Player 2: </label>
+      <input type="text" id="player2" required>
+    </div>
     <button type="button" id="start">Start Game!</button>
   </form>
   <table class="gameBoard">

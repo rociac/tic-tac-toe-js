@@ -3,6 +3,8 @@
 > This project is the game tic-tac-toe, you can create players and plays with friends. The winner is the one
 that is able to have his symbol 3 times in a row.
 
+![tictactoe](https://user-images.githubusercontent.com/11781597/70341840-725a7000-1819-11ea-968c-bbec7d7b8714.png)
+
 ## Built With
 
 - HTML5,
