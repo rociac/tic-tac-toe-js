@@ -1,3 +1,9 @@
+body {
+  padding: 0;
+  margin: 0;
+  background: #292828;
+}
+
 td {
   width: 150px;
   height: 150px;
@@ -8,53 +14,148 @@ h1 {
   margin-bottom: 50px;
 }
 
+img{
+  width: 100px;
+}
+
 .gameBoard {
+  padding: 50px;
   left: 0;
   right: 0;
   margin: auto;
 }
 
+.title-cont{
+  background: black;
+  box-shadow: 1px 1px 15px #5bad21;
+  color: white;
+  font-size: 25px;
+  padding: 15px 2px 1px 2px;
+  text-shadow: 2px 2px 10px #aeff00;
+}
+
+.p-vs{
+    color: white;
+    margin-top: 37px;
+    font-size: 40px;
+    font-weight: bold;
+    text-shadow: 3px 3px 1px black;
+}
+
+.info-p-cont {
+  position: relative;
+}
+
+.name{
+  position: absolute;
+  left: 0;
+  right: 0;
+  text-align: center;
+  bottom: -15px;
+  color: white;
+  font-size: 20px;
+  font-weight: bolder;
+  text-shadow: 1px 1px 4px #aeff00;
+}
+
+.img1{
+  margin-top: -10px;
+}
+
+.img2{
+  margin-top: -30px;
+}
+
+.wins {
+  font-size: 25px;
+  color: white;
+  font-weight: bolder;
+  text-shadow: 1px 1px 1px black;
+}
+
+.gameBoard tr td {
+  color: #5bad21;
+  font-size: 65px;
+  text-align: center;
+  text-shadow: 0px 0px 5px #aeff00;
+  box-shadow: 0px 0px 10px #aeff00;
+}
+
 #td1 {
-  border-bottom: 2px solid black;
+  border-bottom: 5px solid #5bad21;
 }
 
 #td2 {
-  border: 2px solid black;
+  border: 5px solid #5bad21;
   border-top: none;
 }
 
 #td3 {
-  border-bottom: 2px solid black;
+  border-bottom: 5px solid #5bad21;
 }
 
 #td4 {
-  border-bottom: 2px solid black;
+  border-bottom: 5px solid #5bad21;
 }
 
 #td5 {
-  border: 2px solid black;
+  border: 5px solid #5bad21;
   border-top: none;
 }
 
 #td6 {
-  border-bottom: 2px solid black;
+  border-bottom: 5px solid #5bad21;
 }
 
 #td8 {
-  border-right: 2px solid black;
-  border-left: 2px solid black;
+  border-right: 5px solid #5bad21;
+  border-left: 5px solid #5bad21;
 }
 
 #info-winner{
+  display: none;
+  position: fixed;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 50%;
+  top: 30%;
   text-align: center;
-  font-size: 25px;
   padding: 20px;
   font-weight: bold;
-  color: brown;
+  color: green;
+  animation: text-animation 4s infinite;
+  text-shadow: 0px 0px 5px #5bad21;
+  z-index: 10;
+}
+
+@keyframes text-animation {
+  50%{
+    -webkit-transform: scale(3);
+  }
+  100%{
+    -webkit-transform: scale(1);
+  }
 }
 
 #reset {
   display: none;
+  width: 100%;
+  font-size: 20px;
+  margin-bottom: 0;
+  padding: 13px;
+  color: white;
+  text-shadow: 1px 1px 1px black;
+  border: none;
+  background: linear-gradient(to bottom, #5bad21 10%, black)
 }
 
+#reset:hover {
+  background: linear-gradient(to bottom, black 10%, #5bad21);
+}
 
+#scoreBoard {
+  display: flex;
+  justify-content: space-around;
+  background: linear-gradient(to bottom, black, #5bad21, black);
+}

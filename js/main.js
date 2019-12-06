@@ -22,9 +22,14 @@ const formData = {
 function updateScoreboard() {
   const scoreBoard = document.getElementById('scoreBoard');
   scoreBoard.innerHTML = `
-      <h2>Scoreboard:</h2>
-      <p>${player1.getName()} - ${player1.wins} </p>
-      <p>${player2.getName()} - ${player2.wins} </p>
+      <p class="info-p-cont"><img class='img1' src='images/p2.png' alt='Player1'>
+        <span class="name">${player1.getName()}</span>
+        <span class="wins">${player1.wins}</span>
+      </p>
+      <p class="p-vs">vs</p>
+      <p class="info-p-cont"><span class="name">${player2.getName()}</span>
+        <span class="wins">${player2.wins}</span>
+      <img class='img2' src='images/p1.png' alt='Player2'></p>
     `;
 }
 
@@ -54,6 +59,7 @@ function win(player) {
 
 function gameOver(result) {
   const change = document.getElementById('info-winner');
+  change.style.display = "block";
   tic.style.pointerEvents = 'none';
   if (result === 'tie') {
     change.innerHTML = "It's a tie.";
@@ -134,6 +140,7 @@ function resetGame() {
   const change = document.getElementById('info-winner');
   GameBoard.displayBoard();
   tic.style.pointerEvents = 'all';
+  change.style.display = 'none';
   change.innerHTML = '';
   current = player1;
 }
