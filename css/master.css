@@ -1,0 +1,60 @@
+td {
+  width: 150px;
+  height: 150px;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.gameBoard {
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+#td1 {
+  border-bottom: 2px solid black;
+}
+
+#td2 {
+  border: 2px solid black;
+  border-top: none;
+}
+
+#td3 {
+  border-bottom: 2px solid black;
+}
+
+#td4 {
+  border-bottom: 2px solid black;
+}
+
+#td5 {
+  border: 2px solid black;
+  border-top: none;
+}
+
+#td6 {
+  border-bottom: 2px solid black;
+}
+
+#td8 {
+  border-right: 2px solid black;
+  border-left: 2px solid black;
+}
+
+#info-winner{
+  text-align: center;
+  font-size: 25px;
+  padding: 20px;
+  font-weight: bold;
+  color: brown;
+}
+
+#reset {
+  display: none;
+}
+
+
