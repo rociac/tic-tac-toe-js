@@ -1,7 +1,6 @@
 # Tic-tac-toe
 
-> This project is the game tic-tac-toe, you can create players and plays with friends. The winner is the one
-that is able to have his symbol 3 times in a row.
+> This project is the game tic-tac-toe, for two players, X and O, who take turns marking the spaces in a 3×3 grid. The player who succeeds in placing three of their marks in a horizontal, vertical, or diagonal row is the winner.
 
 ![tictactoe](https://user-images.githubusercontent.com/11781597/70341840-725a7000-1819-11ea-968c-bbec7d7b8714.png)
 

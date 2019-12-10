@@ -205,3 +205,15 @@ img{
   justify-content: space-around;
   background: linear-gradient(to bottom, black, #5bad21, black);
 }
+
+@media(max-width: 1200px) {
+  #form {
+    width: 70%;
+  }
+}
+
+@media(max-width: 600px) {
+  #form {
+    width: 80%;
+  }
+}
